@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huiswerk les 25</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#som").click(function() {
+                var a = parseInt($("#a").val());
+                var b = parseInt($("#b").val());
+                window.alert(a+b);
+            })
+            $("#groen").click(function() {
+                $("body").css("background-color", "green");
+            })
+            $("#wit").click(function() {
+                $("body").css("background-color", "white");
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>jQuery</h1>
+    <h2>Som:</h2>
+    <input type="number" id="a">
+    <span>+</span>
+    <input type="number" id="b">
+    <input type="button" id="som" value="bereken">
+    <h2>Achtergrond</h2>
+    <input type="button" value="groen" id="groen">
+    <input type="button" value="wit" id="wit">
+</body>
+</html>
